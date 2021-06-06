@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Rubik';
   src: url('../fonts/Rubik-Medium.woff2') format('woff2'),
-      url('../fonts/Rubik-Medium.woff') format('woff');
+    url('../fonts/Rubik-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -10,7 +10,7 @@
 @font-face {
   font-family: 'Rubik';
   src: url('../fonts/Rubik-Medium.woff') format('woff2'),
-      url('../fonts/Rubik-Regular.woff') format('woff');
+    url('../fonts/Rubik-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -237,13 +237,13 @@ body {
   display: flex;
 }
 
-.site-bookmark__right{
+.site-bookmark__right {
   margin-left: 624px;
   margin-top: -102px;
 }
 
-.hero-bookmark__heading{
-  font-family: 'Rubik',sans-serif;
+.hero-bookmark__heading {
+  font-family: 'Rubik', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 32px;
@@ -253,9 +253,9 @@ body {
   padding-bottom: 16px;
 }
 
-.bookmark-right__text{
+.bookmark-right__text {
   width: 445px;
-  font-family: 'Rubik',sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -264,11 +264,11 @@ body {
   opacity: 0.5;
 }
 
-.button-more{
-margin-top: 32px;
+.button-more {
+  margin-top: 32px;
 }
 
-.section-three{
+.section-three {
   margin-bottom: 50px;
 }
 
@@ -386,11 +386,11 @@ margin-top: 32px;
   border-radius: 5px;
 }
 
-.questions__heading{
+.questions__heading {
   max-width: 540px;
 }
 
-.questions__list{
+.questions__list {
   max-width: 540px;
   margin: 0;
   padding: 0;
@@ -399,17 +399,19 @@ margin-top: 32px;
   margin-right: auto;
   padding-top: 56px;
 }
-.questions__item--wrapper{
+
+.questions__item--wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-bottom: 20px;
   position: relative;
-  border-top: 2px solid  rgb(226, 226, 226);
+  border-top: 2px solid rgb(226, 226, 226);
   padding-top: 20px;
 }
-.questions__item--title{
-  font-family: 'Rubik',sans-serif;
+
+.questions__item--title {
+  font-family: 'Rubik', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -418,7 +420,7 @@ margin-top: 32px;
   color: #242A45;
 }
 
-.questions__item--button{
+.questions__item--button {
   display: block;
   width: 100%;
   height: 15px;
@@ -432,20 +434,22 @@ margin-top: 32px;
   position: absolute;
   margin-left: -17px;
 }
-.questions__item--dropdown{
+
+.questions__item--dropdown {
   display: none;
 }
-.questions__item--active .questions__item--dropdown{
+
+.questions__item--active .questions__item--dropdown {
   display: block;
   padding-bottom: 20px;
 }
 
-.questions__item--down{
-  border-bottom: 2px solid  rgb(226, 226, 226);
+.questions__item--down {
+  border-bottom: 2px solid rgb(226, 226, 226);
   margin-bottom: 54px;
 }
 
-.btn{
+.btn {
   text-decoration: none;
   padding: 10px 24px;
   color: #fff;
@@ -456,26 +460,26 @@ margin-top: 32px;
   transition: all 0.5s ease;
 }
 
-.btn:hover{
+.btn:hover {
   background-color: #fff;
   color: #5267DF;
   border: 2px solid #5267DF;
   border-radius: 5px;
 }
 
-.more-info{
+.more-info {
   margin-top: 54px;
   margin-bottom: 150px;
   margin-left: 220px;
 }
 
-.section__down{
+.section__down {
   background-color: rgba(82, 103, 223, 1);
 
 }
 
-.down-title__text{
-  font-family: 'Rubik',sans-serif;
+.down-title__text {
+  font-family: 'Rubik', sans-serif;
   font-weight: 500;
   font-size: 13px;
   line-height: 40px;
@@ -485,10 +489,10 @@ margin-top: 32px;
   padding-top: 58px;
 }
 
-.down-title__heading{
+.down-title__heading {
   padding: 0;
   width: 408px;
-  font-family: 'Rubik',sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-weight: 500;
   font-size: 32px;
   line-height: 40px;
@@ -500,14 +504,14 @@ margin-top: 32px;
   padding-top: 24px;
 }
 
-.section__form{
+.section__form {
   display: flex;
   justify-content: center;
   margin-top: 36px;
   padding-bottom: 53px;
 }
 
-.email__item{
+.email__item {
   padding: 10px 112px 10px 24px;
   font-weight: normal;
   font-size: 14px;
@@ -517,7 +521,7 @@ margin-top: 32px;
   border: 2px solid transparent;
 }
 
-.form__contact{
+.form__contact {
   /* width: 126px; */
   height: 48px;
   margin-left: 16px;
@@ -535,22 +539,22 @@ margin-top: 32px;
   border: 2px solid #FA5959;
 }
 
-.form__contact:hover{
+.form__contact:hover {
   border: 2px solid #FA5959;
   background-color: #fff;
   color: #FA5959;
 }
 
-.email__item:not(:placeholder-shown):not(:focus):invalid{
+.email__item:not(:placeholder-shown):not(:focus):invalid {
   background-image: url("../img/error.svg");
   background-repeat: no-repeat;
   border-color: tomato;
-  background-position:right 16px center;
+  background-position: right 16px center;
 }
 
-.form__span{
+.form__span {
   display: none;
-  font-family: 'Rubik',sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-style: italic;
   font-weight: 500;
   font-size: 10px;
@@ -559,7 +563,7 @@ margin-top: 32px;
   color: #FFFFFF;
 }
 
-input:not(:placeholder-shown):not(:focus):invalid ~ .form__span {
+input:not(:placeholder-shown):not(:focus):invalid~.form__span {
   display: flex;
   color: #fff;
   padding: 4px 128px 6px 12px;
@@ -567,35 +571,35 @@ input:not(:placeholder-shown):not(:focus):invalid ~ .form__span {
   background-color: #FA5959;
 }
 
-.footer{
-  background-color:  #242A45;
+.footer {
+  background-color: #242A45;
 }
 
-.footer-middle{
+.footer-middle {
   display: flex;
   align-items: center;
-  justify-content: space-between;   
+  justify-content: space-between;
   padding: 35px 0;
 }
 
-.footer__img{
+.footer__img {
   display: flex;
 }
 
-.footer__item{
+.footer__item {
   list-style: none;
 }
 
-.footer-icon{
+.footer-icon {
   display: flex;
 
 }
 
-.footer__link{
+.footer__link {
   margin: 0;
   padding: 0;
   text-decoration: none;
-  font-family: 'Rubik',sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-weight: normal;
   font-size: 13px;
   line-height: 17px;
@@ -605,16 +609,14 @@ input:not(:placeholder-shown):not(:focus):invalid ~ .form__span {
   transition: all 0.5s ease;
 }
 
-.footer__link:hover{
+.footer__link:hover {
   color: #FA5959;
 }
 
-.contacts{
+.contacts {
   margin-right: 0;
 }
 
-.facebook-icon{
-  margin-right: 40px; 
+.facebook-icon {
+  margin-right: 40px;
 }
-
-
