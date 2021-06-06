@@ -374,6 +374,7 @@ margin-top: 32px;
   background-color: #495fc4;
   border-radius: 5px;
   border: 2px solid #5267DF;
+  white-space: nowrap;
 }
 
 .extentions--button:hover {
