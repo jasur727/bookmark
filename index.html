@@ -46,42 +46,76 @@
   </section>
 
   <main>
-    <div class="container">
-      <section class="section__feature">
-        <div class="feature">
-          <h2 class="feature__heading">Features</h2>
-          <p class="feature__text">Our aim is to make it quick and easy for you to access your favourite websites. Your
-            bookmarks sync between your devices so you can access them on the go.</p>
+    <section class="features">
+      <div class="container">
+        <div class="features__header">
+          <h2 class="features__title">Features</h2>
+          <p class="features__desc">Our aim is to make it quick and easy for you to access your favourite websites.
+            Your bookmarks sync between your devices so you can access them on the go.</p>
         </div>
-
         <ul class="features-tabs">
-          <li class="features-tabs__item">
-            <button type="button" class="features-tabs__link">Simple Bookmarking</button>
-          </li>
           <li class="features-tabs__item features-tabs__item--active">
-            <button type="button" class="features-tabs__link">Speedy Searching </button>
+            <a class="features-tabs__link" href="#panel-1">Simple Bookmarking</a>
           </li>
+
           <li class="features-tabs__item">
-            <button type="button" class="features-tabs__link">Easy Sharing</button>
+            <a class="features-tabs__link" href="#panel-2">Speedy Searching</a>
+          </li>
+
+          <li class="features-tabs__item">
+            <a class="features-tabs__link" href="#panel-3">Easy Sharing</a>
           </li>
         </ul>
-      </section>
-    </div>
+      </div>
+    </section>
+    <!-- PANELS -->
+    <section class="panels">
+      <h2 class="visually-hidden"></h2>
+      <ul class="panels__list">
 
-    <section class="bookmark-item">
-      <div class="bgc-right">
-        <div class="site-bookmark">
-          <div class="container">
-            <div class="site-bookmark__right">
-              <h2 class="hero-bookmark__heading">Bookmark in one click</h2>
-              <p class="bookmark-right__text">Organize your bookmarks however you like. Our simple drag-and-drop
+        <li id="panel-1" class="panels__item panels__item--active panel">
+          <div class="panel__container container">
+            <img class="panels__img" src="./img/fatures-img-click.png" alt="" aria-hidden="true" width="536"
+              height="346">
+
+            <div class="panel__content">
+              <h3 class="features__bookmark-head">Bookmark in one click</h3>
+              <p class="features__bookmark-content">Organize your bookmarks however you like. Our simple drag-and-drop
                 interface gives you complete control over how you manage your favourite sites.</p>
-
-                <button class="btn button-more" type="button">More Info</button>
+              <a class="buttons button--blue" href="#">More Info</a>
             </div>
           </div>
-        </div>
-      </div>
+        </li>
+
+
+        <li id="panel-2" class="panels__item panel">
+          <div class="panel__container container">
+            <img class="panel__img" src="./img/features-img-intelligient.png" alt="" aria-hidden="true" width="468"
+              height="393">
+
+            <div class="panel__content">
+              <h3 class="features__bookmark-head">Intelligent search</h3>
+              <p class="features__bookmark-content">Our powerful search feature will help you find saved sites in no
+                time at all. No need to trawl through all of your bookmarks.</p>
+              <a class="buttons button--blue" href="#">More Info</a>
+            </div>
+          </div>
+        </li>
+
+        <li id="panel-3" class="panels__item panel">
+          <div class="panel__container container">
+            <img class="panel__img" src="./img/share-img.png" alt="" aria-hidden="true" width="440" height="380">
+
+            <div class="panel__content">
+              <h3 class="features__bookmark-head">Share your bookmarks</h3>
+              <p class="features__bookmark-content">Easily share your bookmarks and collections with others. Create a
+                shareable link that you can send at the click of a button.</p>
+              <a class="buttons button--blue" href="#">More Info</a>
+            </div>
+          </div>
+        </li>
+
+      </ul>
     </section>
 
 
@@ -90,8 +124,8 @@
         <div class="section-three">
 
           <div>
-            <h2 class="feature__heading download__heading">Download the extension</h2>
-            <p class="feature__text">We’ve got more browsers in the pipeline. Please do let us know if you’ve got a
+            <h2 class="features__title download__heading">Download the extension</h2>
+            <p class="features__desc">We’ve got more browsers in the pipeline. Please do let us know if you’ve got a
               favourite you’d like us to prioritize.</p>
           </div>
 
@@ -125,8 +159,8 @@
     <section>
       <div class="container">
         <div>
-          <h2 class="feature__heading download__heading">Frequently Asked Questions</h2>
-          <p class="feature__text">Here are some of our FAQs. If you have any other questions you’d like answered please
+          <h2 class="features__title download__heading">Frequently Asked Questions</h2>
+          <p class="features__desc">Here are some of our FAQs. If you have any other questions you’d like answered please
             feel free to email us.</p>
         </div>
 
@@ -190,7 +224,8 @@
 
           <div class="section__form">
             <form action="https://echo.htmlacademy.ru" method="POST">
-              <input class="email__item" type="email" minlength="4" maxlength="30" placeholder="Enter your email address" name="email-addres" aria-label="email adress" required>
+              <input class="email__item" type="email" minlength="4" maxlength="30"
+                placeholder="Enter your email address" name="email-addres" aria-label="email adress" required>
               <span class="form__span">Whoops, make sure it’s an email</span>
             </form>
             <button class="form__contact" type="submit">Contact Us</button>
@@ -210,15 +245,16 @@
           <ul class="footer-icon">
             <li class="footer__item"><a class="footer__link" target="_blank" href="./features.html">FEATURES</a></li>
             <li class="footer__item"><a class="footer__link" target="_blank" href="./pricing.html">PRICING</a></li>
-            <li class="footer__item"><a class="footer__link contacts" target="_blank" href="./contact.html">CONTACT</a></li>
+            <li class="footer__item"><a class="footer__link contacts" target="_blank" href="./contact.html">CONTACT</a>
+            </li>
           </ul>
         </div>
-  
+
         <div class="footer__left">
           <a href="#">
             <img class="facebook-icon" src="./img/facebook.svg" alt="" width="24" height="24">
           </a>
-          
+
           <a href="#">
             <img class="twitter-icon" src="./img/twitter.svg" alt="" width="24" height="20">
           </a>
@@ -230,4 +266,3 @@
 </body>
 
 </html>
-

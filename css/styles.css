@@ -168,108 +168,160 @@ body {
   margin-top: 127px;
 }
 
-.feature__heading {
-  margin-top: 0;
-  font-family: 'Rubik', sans-serif;
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 52px;
-  text-align: center;
-  letter-spacing: -0.1px;
-  color: #242A45;
+/* FEATURES */
+.features{
+  padding-top: 80px;
 }
-
-.feature__text {
-  margin-top: 0;
+.features__header{
   width: 540px;
-  font-family: 'Rubik', sans-serif;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 28px;
   text-align: center;
-  color: #242A45;
-  opacity: 0.5;
-  margin-left: auto;
   margin-right: auto;
-  margin-top: 16px;
+  margin-left: auto;
 }
-
-.features-tabs {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  border-bottom: 2px solid #f2f2f2;
-  width: 730px;
+.features__title{
+  margin: 0;
   padding: 0;
-  margin-top: 72px;
-}
-
-.features-tabs__link {
-  border: none;
-  background-color: #fff;
-}
-
-.features-tabs__item {
-  list-style: none;
-  width: 243px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 52px;
   text-align: center;
-  border-bottom: 3px solid transparent;
+  letter-spacing: -0.1px;
+  margin-bottom: 16px;
 }
-
-.features-tabs__item--active {
-  padding-bottom: 26px;
-  border-bottom-color: tomato;
+.features__desc{
+  margin: 0;
+  padding: 0;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  margin-bottom: 40px;
+  width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
-
-.features-tabs__link:hover {
-  color: tomato;
-}
-
-
-.site-bookmark {
-  padding-top: 157px;
-  padding-bottom: 123px;
-  background: url("../img/site-bg-2.png");
-  background-repeat: no-repeat;
-  background-position: left calc(50% - 546px) top calc(-4px);
-  margin-bottom: 80px;
-  margin-top: 127px;
+.features-tabs{
   display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  width: 730px;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  border-bottom: 1px solid rgba(73, 93, 207, 0.20012);
+  justify-content: space-between;
+}
+.features-tabs__item{
+  border-bottom: 4px solid transparent;
+}
+.features-tabs__item--active{
+  border-bottom: 4px solid #FA5959;
 }
 
-.site-bookmark__right {
-  margin-left: 624px;
-  margin-top: -102px;
+.features-tabs__item--active .features-tabs__link{
+  opacity: 1;
 }
 
-.hero-bookmark__heading {
-  font-family: 'Rubik', sans-serif;
-  font-style: normal;
+.features-tabs__link{
+  display: inline-block;
+  font-size: 16px;
+  line-height: 17px;
+  letter-spacing: 0.533333px;
+  color:#000;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+  padding: 27px 30px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.features-tabs__link:hover{
+  color: #FA5959;
+}
+
+.features__bookmark-titles{
+  width: 445px;
+  position: relative;
+  left: 650px;
+}
+.features__bookmark-head{
+  margin: 0;
+  padding: 0;
   font-weight: 500;
   font-size: 32px;
   line-height: 52px;
   letter-spacing: -0.1px;
-  color: #242A45;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
-
-.bookmark-right__text {
-  width: 445px;
-  font-family: 'Rubik', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 28px;
-  color: #242A45;
+.features__bookmark-content{
+  margin: 0;
+  padding: 0;
   opacity: 0.5;
+  margin-bottom: 32px;
 }
 
-.button-more {
-  margin-top: 32px;
+/* PANELS */
+
+.panels__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.panels__item {
+  display: none;
+}
+
+.panels__item--active {
+  display: block;
+}
+
+.panel {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-image: url("../img/bg-blue.svg");
+  background-repeat: no-repeat;
+  background-position: calc(50% - 650px) bottom;
+}
+
+.panel__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.panel__img {
+  flex-shrink: 0;
+}
+
+.panel__content{
+  max-width: 445px;
 }
 
 .section-three {
   margin-bottom: 50px;
+}
+
+.button--blue{
+  text-decoration: none;
+  border: 2px solid #5267DF;
+  padding: 10px 24px;
+  background: #5267DF;
+  box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+  border-radius: 5px;
+  color: #fff;
+  transition: all 0.5s ease;
+}
+
+.button--blue:hover{
+  border: 2px solid #5267DF;
+  background-color: #fff;
+  color: #5267DF;
+}
+
+.download__heading{
+  margin-top: 149px;
 }
 
 .extentions-section__list {
@@ -522,7 +574,6 @@ body {
 }
 
 .form__contact {
-  /* width: 126px; */
   height: 48px;
   margin-left: 16px;
   padding: 10px 24px;
